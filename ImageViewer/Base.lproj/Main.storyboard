@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="42S-f1-2O1">
-                                <rect key="frame" x="0.0" y="144" width="414" height="424"/>
+                                <rect key="frame" x="20" y="194" width="374" height="374"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,15 +45,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g1h-sq-OSs" secondAttribute="trailing" constant="50" id="2Ut-53-8oy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XBB-3O-DF0" secondAttribute="bottom" constant="50" id="CkB-6g-iJW"/>
                             <constraint firstItem="g1h-sq-OSs" firstAttribute="height" secondItem="XBB-3O-DF0" secondAttribute="height" multiplier="0.704545" id="CkO-bL-IxR"/>
-                            <constraint firstItem="42S-f1-2O1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Gbo-YE-SgS"/>
+                            <constraint firstItem="42S-f1-2O1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Gbo-YE-SgS"/>
                             <constraint firstItem="XBB-3O-DF0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="HQf-1Z-gS2"/>
                             <constraint firstItem="g1h-sq-OSs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XBB-3O-DF0" secondAttribute="trailing" constant="8" symbolic="YES" id="QWj-PW-bis"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XBB-3O-DF0" secondAttribute="bottom" constant="50" id="ROu-sd-34i"/>
                             <constraint firstItem="XBB-3O-DF0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="dBR-V1-gm6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g1h-sq-OSs" secondAttribute="bottom" constant="50" id="dna-CB-AXr"/>
-                            <constraint firstItem="42S-f1-2O1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eiJ-aV-zK8"/>
+                            <constraint firstItem="42S-f1-2O1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="eiJ-aV-zK8"/>
                             <constraint firstItem="XBB-3O-DF0" firstAttribute="top" secondItem="42S-f1-2O1" secondAttribute="bottom" constant="200" id="hc9-yo-j09"/>
-                            <constraint firstItem="42S-f1-2O1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hcV-ov-eOG"/>
+                            <constraint firstItem="42S-f1-2O1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hcV-ov-eOG"/>
                         </constraints>
                     </view>
                     <connections>

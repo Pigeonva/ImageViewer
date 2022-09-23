@@ -27,6 +27,7 @@ class ViewController: UIViewController {
                        UIImage(named: "10")]
     var index = 0
     var secondImageView = UIImageView()
+    let space: CGFloat = 20
     
     //MARK: - Lifecycle functions
     
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         firstImageView.image = imagesArray[index]
+        firstImageView.dropShadow()
+        secondImageView.dropShadow()
     }
     
     //MARK: - IBActions
@@ -64,10 +67,10 @@ class ViewController: UIViewController {
     
     private func rightMove() {
         view.addSubview(secondImageView)
-        secondImageView.frame = CGRect(x: firstImageView.frame.width, y: firstImageView.frame.origin.y, width: firstImageView.frame.width, height: firstImageView.frame.height)
+        secondImageView.frame = CGRect(x: self.view.frame.width, y: firstImageView.frame.origin.y, width: firstImageView.frame.width, height: firstImageView.frame.height)
         secondImageView.image = imagesArray[index]
         UIView.animate(withDuration: 0.3) {
-            self.secondImageView.frame.origin.x -= self.firstImageView.frame.width
+            self.secondImageView.frame.origin.x -= self.firstImageView.frame.width + self.space
         } completion: { _ in
             self.firstImageView.image = self.secondImageView.image
             self.secondImageView.removeFromSuperview()
@@ -87,3 +90,16 @@ class ViewController: UIViewController {
     }
 }
 
+extension UIImageView {
+    
+    func dropShadow() {
+            layer.masksToBounds = false
+            layer.shadowColor = UIColor.black.cgColor
+            layer.shadowOpacity = 0.5
+            layer.shadowOffset = CGSize(width: 10, height: 10)
+            layer.shadowRadius = 10
+            
+            layer.shadowPath = UIBezierPath(rect: bounds).cgPath
+            layer.shouldRasterize = true
+    }
+}
